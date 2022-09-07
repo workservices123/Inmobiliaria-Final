@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleLogin.css">
+    <link rel="shortcut icon" href="https://res.cloudinary.com/dasuy0gun/image/upload/v1658781217/imagenes%20carrito%20de%20compras/REAL_STATE_SERVICES2_fcabyz.png" type="image/x-icon">
+    
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        
+        <div class="login-box">
+            <img class="avatar" src="https://res.cloudinary.com/dasuy0gun/image/upload/v1658781217/imagenes%20carrito%20de%20compras/REAL_STATE_SERVICES2_fcabyz.png" alt="casita logo">
+            <h1>Inicia sesión aqui</h1>
+            
+            <nav>
+                <a href="indexPagina.html">Inicio</a>
+                <a href="indexRegistro.html">Register</a>
+            </nav>
+            
+            <main>
+                <form id="frm-register" >
+                    <!-- nombre de usuario -->
+                    <label for="userName">Nombre de usuario</label>
+                    <input id="userName" type="text" placeholder="Ingresa tu nombre de usuario" value="">
+                    
+                    <!-- contraseña -->
+                    <label for="password">Contraseña</label>
+                    <input id="password" type="password" placeholder="Ingresa tu contraseña" value="">
+                    <!-- boton -->
+                    <div class="buttons">
+                        <input type="submit" id="btn-login" class="myButton" value="Log In">
+                        <a href="indexRegistro.html">Crea una cuenta</a>
+                        <a href="#">¿Olvidaste tu contraseña?</a>
+                    </div>
+                </form>
+            </main>
+        </div>
+        <script src="login.js"></script>
+    </header>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="shortcut icon" href="img/REAL STATE SERVICES.png" type="image/x-icon"> -->
+    <title>Shop</title>
+    <link rel="stylesheet" href="styleCarrito.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <img src="https://res.cloudinary.com/dasuy0gun/image/upload/v1658781217/imagenes%20carrito%20de%20compras/REAL_STATE_SERVICES2_fcabyz.png" alt="">
+        <h1>Real States Services</h1>
+        <i class=" icons fas fa-shopping-cart" id="products">0</i>
+        <!-- <p id="p-conter">0</p> -->
+    </header>
+    <hr>
+    <nav>
+        <i><a href="indexLogin.html"><img  src="https://res.cloudinary.com/dasuy0gun/image/upload/v1658781217/imagenes%20carrito%20de%20compras/btnSalir_rgvmx5.png" alt=""></a></i>
+        <i><a href="indexPagina.html"><img  src="https://res.cloudinary.com/dasuy0gun/image/upload/v1658781216/imagenes%20carrito%20de%20compras/btnInicio_xes8sc.png" alt=""></a></i>
+    </nav>
+    <div class="container-products">
+        <div class="modal"> 
+            <button id="close-modal">X</button>
+            <input type="text" id="new-product" placeholder="Product">
+            <input type="Number" id="new-price" placeholder="Price">
+            <input type="file" id="new-image" >
+            <input type="Number" id="new-area" placeholder="New Area">
+            <input type="text" id="new-ciudad" placeholder="New Ciudad">
+            <select id="new-tipo" placeholder=" New Tipo">
+                
+                <option value="arrienda">Arrienda</option>
+                <option value="venta">Venta</option>
+
+            </select>
+            <select name="" id="newEstrellas"><option value="★★★">★★★</option>
+                <option value="★★★★">★★★★</option>
+                <option value="★★★★★">★★★★★</option></select>
+            <button id="btn-new-create">create new object</button>
+
+            
+        </div><select name="" id="filterXPrice">
+            <option value="" class="selected">Select filter</option>
+            <optgroup label="Ciudad">
+                <option value="Armenia">Armenia</option>
+                <option value="Pereira">Pereira</option>
+                <option value="Cali">Cali</option>
+                <option value="Bogota">Bogota</option>
+                <option value="Cartagena">Cartagena</option>
+                <option value="Medellin">Medellin</option>
+            </optgroup>
+            <optgroup label="Estrellas">
+                <option value="3E">★★★</option>
+                <option value="4E">★★★★</option>
+                <option value="5E">★★★★★</option>
+            </optgroup>
+            <optgroup label="Area (m2)">
+                <option value="area1">100000-300000</option>
+                <option value="area2">300000-500000</option>
+                <option value="area3">5000000-700000</option>
+            </optgroup>
+            <optgroup label="Precio ($)">
+                <option value="precio1">Menor a 500.000.000</option>
+                <option value="precio2">500.000.000 - 1.000.000.000</option>
+                <option value="precio3">1.000.000.000 - 1.500.000.000</option>
+                <option value="precio4">Mayor a 1.500.000.000</option>
+            </optgroup>
+        </select>
+        <!-- este select se debe renderizar por javaScript consumiendo el objeto -->
+        <select name="products" id="select-products">
+            <option value="">SELECT ONE OPTION</option>
+        </select>
+
+        
+        <button id="btn-create">Create new product</button>
+    </div>
+    <main id="container-cards"></main>
+    <div class="overlay " id="overlay">
+        <div class="popup" id="popup">
+        <a href="#" id="btn-close-popup" class="btn-close-popup"><i class="fas fa-times"></i></a>
+        <div class="shoppingCart">
+            <!-- <i class="fas fa-shopping-cart"></i> -->
+            <h3>Carrito</h3>
+        </div>
+        <div class="principal-container shoppingCart-container" >
+        </div><p id="total"></p>
+        </div>
+    </div>
+    <script src="app.js" type="module"></script>
+    <!-- <script src="products.js"></script> -->
+    <script src="firebase.js" type="module"></script>
+</body>
+</html>
